@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Mix It Up Test</title>
+  </head>
+  <style>
+    #container .mix {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <button class="filter" data-filter=".web-projects">Web Projects</button>
+      <button class="filter" data-filter=".video-projects">Video Projects</button>
+      <button class="filter" data-filter=".graphic-projects">Graphic Projects</button>
+
+      <button class="sort" data-sort="my-order:asc">Ascending Order</button>
+      <button class="sort" data-sort="my-order:desc">Descending Order</button>
+      <div class="mix web-projects" data-my-order="1">Web</div>
+      <div class="mix video-projects" data-my-order="2">Video</div>
+      <div class="mix graphic-projects" data-my-order="3">Graphic</div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="build/jquery.mixitup.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        console.log("DOC Ready!");
+      });
+
+      $(function(){
+        $('#container').mixItUp();
+      });
+    </script>
+
+  </body>
+
+
+</html>
