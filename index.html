@@ -1,33 +1,92 @@
 <html>
   <head>
     <title>Mix It Up Test</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <style>
+    body {
+      background-color: #000;
+    }
+
     #container .mix {
       display: none;
+    }
+
+    .portfolio {
+      margin: 50px 0 0 0;
+    }
+
+    .mix {
+      height: 200px;
+      width: 300px;
+      background-color: #94BE90;
+      margin: 20px 20px 20px 20px;
     }
   </style>
 
   <body>
     <div id="container">
-      <button class="filter" data-filter=".web-projects">Web Projects</button>
-      <button class="filter" data-filter=".video-projects">Video Projects</button>
+      <button class="filter" data-filter=".mix">ALL</button>
+      <button class="filter" data-filter=".web">Web Projects</button>
+      <button class="filter" data-filter=".video">Video Projects</button>
       <button class="filter" data-filter=".graphic-projects">Graphic Projects</button>
 
       <button class="sort" data-sort="my-order:asc">Ascending Order</button>
       <button class="sort" data-sort="my-order:desc">Descending Order</button>
-      <div class="mix web-projects" data-my-order="1">Web</div>
-      <div class="mix video-projects" data-my-order="2">Video</div>
-      <div class="mix graphic-projects" data-my-order="3">Graphic</div>
+      <div id = "folioItems" class="portfolio">
+        <!-- <div class="mix web-projects" data-my-order="1">Web</div>
+        <div class="mix video-projects" data-my-order="2">Video</div>
+        <div class="mix graphic-projects" data-my-order="3">Graphic</div>
+        <div class="mix web-projects" data-my-order="4">Web</div>
+        <div class="mix video-projects" data-my-order="5">Video</div>
+        <div class="mix graphic-projects" data-my-order="6">Graphic</div> -->
+      </div>
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
     <script src="build/jquery.mixitup.min.js"></script>
     <script>
       $(document).ready(function(){
         console.log("DOC Ready!");
+
+        var folio = "";
+
+        jQuery.ajax({
+          type: "GET",
+          url: "portfolio.json",
+          dataType: "json",
+          success: buildFolio
+        });
+
+        function buildFolio(portfolio) {
+          // console.log(portfolio);
+
+          $.each(portfolio,function(i,folioItem){
+            var i = 1;
+            folio += '<div class="mix"><a target= "_blank" href="' + folioItem.Link +'"><img src="' + folioItem.Img + '"></a></div>';
+          });
+
+          $('#folioItems').append(folio);
+        }
+
+
+
+
       });
+
+
+
+
 
       $(function(){
         $('#container').mixItUp();

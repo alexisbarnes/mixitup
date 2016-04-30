@@ -1,0 +1,93 @@
+[
+  {
+    "Title":"UNC Men's Basketball: Antwan Jamison 1-on-1",
+    "Type":"video",
+    "Link":"https://youtu.be/pThIrolBfwc",
+    "Img":"imgs/antwanjamison.png",
+    "Info":"Alexis shot the camera facing the interviewer and edited this video together for GoHeels TV. She also helped with the set up of the lights and wireless mics at the location. She posted the video on YouTube, GoHeels.com and Twitter."
+  },
+  {
+    "Title":"API Project",
+    "Type":"web",
+    "Link":"/586/final_project",
+    "Img":"imgs/apiproject.png",
+    "Info":"This project required the use of Google, Twitter and Instagram APIs. The subject of this project is Beyonce's Formation World Tour. The purpose is to map out the tour route and allow users to find a location near them. Also, it shows what other fans are tweeting about her album and tour."
+  },
+  {
+    "Title":"This Is Carolina Basketball - Episode 4",
+    "Type":"video",
+    "Link":"https://youtu.be/xw7nbxwmaQ4",
+    "Img":"imgs/carolinabball.png",
+    "Info":"Alexis was able to help with this episode of This Is Carolina Basketball for GoHeels TV. She was able to edit the section focused on the team managers."
+  },
+  {
+    "Title":"Food Insecurity On Campus",
+    "Type":"video",
+    "Link":"https://youtu.be/DAWUOmDTu6Q",
+    "Img":"imgs/carolinacupboard.png",
+    "Info":"This video project was created for a class, which required our final video and web project to be about food. So this video is about the student-ran food pantry at UNC-Chapel Hill."
+  },
+  {
+    "Title":"CSS Dashboard",
+    "Type":"web",
+    "Link":"/586/project_1",
+    "Img":"imgs/cssdashboard.png",
+    "Info":"This css dashboard was the first project for intermediate interactive media. This project was created to help advance everyone's css skills."
+  },
+  {
+    "Title":"UNC Men's Basketball: Danny Green 1-on-1",
+    "Type":"video",
+    "Link":"https://youtu.be/rSrMb7KHics",
+    "Img":"imgs/dannygreen.png",
+    "Info":"Alexis shot the camera facing the interviewer and edited this video together for GoHeels TV. She also helped with the set up of the lights and wireless mics at the location. She posted the video on YouTube, GoHeels.com and Twitter."
+  },
+  {
+    "Title":"Data App",
+    "Type":"web",
+    "Link":"/586/project_3",
+    "Img":"imgs/dataapp.png",
+    "Info":"The purpose of the third project in intermediate interactive media was to teach how to find and clean up data and display it cleanly, using Highcharts. The assignment also required that it should mimic a publication in terms of style (text, colors, layout, etc)."
+  },
+  {
+    "Title":"UNC Women's Basketball: Sylvia Hatchess Discusses 2015-16 Schedule",
+    "Type":"video",
+    "Link":"https://youtu.be/4W1sN-FKvEI",
+    "Img":"imgs/hatchellwbb.png",
+    "Info":"Alexis edited most of this video for GoHeels TV to along with the announcement of the 2015-16 women’s basketball schedule. She is not responsible for the graphics in the video."
+  },
+  {
+    "Title":"UNC Women's Tennis: Jamie Loeb 1-on-1",
+    "Type":"video",
+    "Link":"https://youtu.be/Jp_KqQzMepo",
+    "Img":"imgs/jamieloeb.png",
+    "Info":"Alexis’ job was to edit this video together for GoHeels TV. She had to figure out cut down the original video and incorporate b-roll to help tell the story."
+  },
+  {
+    "Title":"UNC Men's Basketball: Jerry Stackhouse 1-on-1",
+    "Type":"video",
+    "Link":"https://youtu.be/IozQfweZADQ",
+    "Img":"imgs/jerrystackhouse.png",
+    "Info":"Alexis shot the camera facing the interviewer and edited this video together for GoHeels TV. She also helped with the set up of the lights and wireless mics at the location. She posted the video on YouTube, GoHeels.com and Twitter."
+  },
+  {
+    "Title":"Trapped",
+    "Type":"video",
+    "Link":"https://youtu.be/goyz8WinE6c",
+    "Img":"imgs/trapped.png",
+    "Info":"Trapped was a class project for intermediate media production. The project focused on lighting. Each group had to create a sci-fi or crime story and use different lighting set ups. Because the video is based solely on lighting, the project is based on photos and not moving images."
+  },
+  {
+    "Title":"UNC Volleyball: New Locker Room",
+    "Type":"video",
+    "Link":"https://youtu.be/72eW120gUK4",
+    "Img":"imgs/vblockerroom.png",
+    "Info":"Alexis edited this video for GoHeels TV. This video was an announcement for the plans for a new locker room for the UNC volleyball team."
+  },
+  {
+    "Title":"Wabi Sabi",
+    "Type":"web",
+    "Link":"/magazine",
+    "Img":"imgs/wabisabi.png",
+    "Info":"The goal of this project was to take a print magazine and turn it into a website. I had to create my own WordPress theme for this site."
+  }
+]
