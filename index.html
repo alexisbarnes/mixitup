@@ -17,10 +17,6 @@
       background-color: #000;
     }
 
-    #container .mix {
-      display: none;
-    }
-
     .portfolio {
       margin: 50px 0 0 0;
     }
@@ -30,18 +26,25 @@
       width: 300px;
       background-color: #94BE90;
       margin: 20px 20px 20px 20px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
     }
+
+    
+
+
   </style>
 
   <body>
     <div id="container">
-      <button class="filter" data-filter=".mix">ALL</button>
+      <!-- <button class="filter" data-filter=".mix">ALL</button>
       <button class="filter" data-filter=".web">Web Projects</button>
       <button class="filter" data-filter=".video">Video Projects</button>
       <button class="filter" data-filter=".graphic-projects">Graphic Projects</button>
 
       <button class="sort" data-sort="my-order:asc">Ascending Order</button>
-      <button class="sort" data-sort="my-order:desc">Descending Order</button>
+      <button class="sort" data-sort="my-order:desc">Descending Order</button> -->
       <div id = "folioItems" class="portfolio">
         <!-- <div class="mix web-projects" data-my-order="1">Web</div>
         <div class="mix video-projects" data-my-order="2">Video</div>
@@ -73,7 +76,7 @@
 
           $.each(portfolio,function(i,folioItem){
             var i = 1;
-            folio += '<div class="mix"><a target= "_blank" href="' + folioItem.Link +'"><img src="' + folioItem.Img + '"></a></div>';
+            folio += '<div class="mix"><a target= "_blank" href="' + folioItem.Link +'"><img src="' + folioItem.Img + '"><div class="description"><p class="description-content">' + folioItem.Info + '</p></div></a></div>';
           });
 
           $('#folioItems').append(folio);
