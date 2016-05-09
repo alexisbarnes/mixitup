@@ -31,7 +31,74 @@
       overflow: hidden;
     }
 
-    
+    .caption {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .caption-media {
+      display: block;
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .caption-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      color: #fff;
+      transform: translateY(100%);
+      transition: transform .35s ease-out;
+    }
+
+    .caption:hover .caption-overlay {
+      transform: translateY(0);
+    }
+
+    .caption-overlay-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #D61913;
+      margin: 0;
+      padding: 0 0 12px;
+      transform: translateY( calc(-100% - 10px) );
+      transition: transform .35s ease-out;
+    }
+
+    .overlay-content {
+      font-size: 14px;
+      color: #D9C7A8;
+    }
+
+    .caption:hover .caption-overlay-title {
+      transform: translateY(0);
+    }
+
+    .caption::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: transparent;
+      transition: background .35s ease-out;
+    }
+
+    .caption:hover::before {
+      background: rgba(0,0,0,.5);
+    }
+
+    .caption {
+      transform: translateZ(0);
+    }
+
+
+
 
 
   </style>
@@ -76,7 +143,7 @@
 
           $.each(portfolio,function(i,folioItem){
             var i = 1;
-            folio += '<div class="mix"><a target= "_blank" href="' + folioItem.Link +'"><img src="' + folioItem.Img + '"><div class="description"><p class="description-content">' + folioItem.Info + '</p></div></a></div>';
+            folio += '<div class="mix"><article class="caption"><a target= "_blank" href="' + folioItem.Link +'"><img class="caption-media" src="' + folioItem.Img + '" /><div class="caption-overlay"><h1 class="caption-overlay-title">' + folioItem.Title + '</h1><p class="overlay-content">' + folioItem.Info + '</p></div></a></article></div>';
           });
 
           $('#folioItems').append(folio);
